@@ -1,0 +1,37 @@
+{
+	"name": "SQLCustomerTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LinkedServicetoSQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Company",
+				"type": "varchar"
+			},
+			{
+				"name": "Product",
+				"type": "varchar"
+			},
+			{
+				"name": "ISSUEID",
+				"type": "varchar"
+			},
+			{
+				"name": "REASON",
+				"type": "varchar"
+			},
+			{
+				"name": "CAUSE",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "sample1"
+		}
+	}
+}
